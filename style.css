@@ -1,29 +1,48 @@
-html {
+/* Body CSS */
+
+body {
     background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     background-color: #ffffff;
     color: #007d7b;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-weight: bold;
 }
 
 h2 {
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
-nav {
+/* Navigation & Links */
+
+nav ul {
     background-color: #000000;
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: end;
+}
+nav li {
+    text-transform: uppercase;
+    list-style-type: none;
 }
 
 section.about {
     background-color: #ffffff;
     color: #000000;
+    display: grid;
 }
+
+/* Font Sizes */
+
+p {font-size: 1.25em;}
+figcaption, label, input, small {font-size: 1em;}
+nav a {font-size: 1.5em;}
+h1 {font-size: 3em;}
+h2 {font-size: 2em;}
