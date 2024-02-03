@@ -40,6 +40,7 @@ nav ul {
     gap: 10px;
     justify-content: flex-end;
 }
+
 nav li {
     text-transform: uppercase;
     list-style-type: none;
@@ -66,6 +67,7 @@ section.about {
     background-color: #ffffff;
     color: #000000;
     display: grid;
+    padding: 10px 10px 0px 10px;
 }
 
 /* Photo Gallery */
@@ -75,11 +77,7 @@ section.photos {
     display: grid;
     text-align: center;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 5px;
-    grid-auto-flow: dense;
-    justify-content: space-between;
-
+    grid-gap: 2px;
 }
 
 section.photos img {
@@ -106,6 +104,8 @@ section.photos figcaption {
 /* Contact Me Form */
 
 section.contact {
+    display: grid;
+    grid-template-columns: 1fr;
     box-sizing: border-box;
     background-color: #000000;
     color: #ffffff;
@@ -114,33 +114,55 @@ section.contact {
 }
 
 section.contact form{
-    display: block;
-    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    box-sizing: border-box;
 }
 
 section.contact label{
     display: block;
-    margin: 0 auto;
+    margin-left: 10%;
+    width: 70%;
+    margin-right: 20%;
+    padding: 10px 10px 2px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 
 section.contact input{
+    margin-left: 10%;
+    margin-right: 10%;
     display: block;
-    max-width: 80%;
+    box-sizing: border-box;
+    color: #007d7b;
+    border: 2px solid #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px;
+    width: 80%;
 }
 
-section.contact textarea{
-    display: block;
-    max-width: 80%;
-}
-
+section.contact input[type=text]:focus {
+    border: 2px solid #000000;
+  }
 
 section.contact button {
-    display: block;
+    justify-items: center;
     background-color: #007d7b;
     color: #ffffff;
     padding: 3px 60px;
-    border-radius: 20px;
+    margin-top: 20px;
+    border-radius: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    cursor: pointer;
+}
+
+section.contact button:focus {
+    border: 2px solid #ffffff;
 }
 
 /* Footer */
@@ -160,4 +182,52 @@ nav a {font-size: 1.5em;}
 h1 {font-size: 3em;}
 h2 {font-size: 2em;}
 
+/* Breakpoints */
 
+/* Tablet View */
+
+@media screen and (max-width: 880px) {
+
+    body {
+        max-width: 880px;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        box-sizing: content-box;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    section.photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/* Phone View */
+
+@media screen and (max-width: 485px) {
+
+    body {
+        max-width: 485px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav ul {
+        box-sizing: content-box;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    section.photos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }    
+
+}
