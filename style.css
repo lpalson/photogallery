@@ -186,7 +186,7 @@ h2 {font-size: 2em;}
 
 /* Tablet View */
 
-@media screen (max-width: 880px) {
+@media (max-width: 880px) {
 
     body {
         max-width: 880px;
@@ -208,7 +208,7 @@ h2 {font-size: 2em;}
 
 /* Phone View */
 
-@media screen (max-width: 485px) {
+@media (max-width: 485px) {
 
     body {
         max-width: 485px;
