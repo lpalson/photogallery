@@ -199,7 +199,7 @@ h2 {font-size: 2em;}
         justify-content: center;
     }
 
-    section.photos {
+    div.photos {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -225,7 +225,7 @@ h2 {font-size: 2em;}
         justify-content: center;
     }
 
-    section.photos {
+    div.photos {
         display: grid;
         grid-template-columns: 1fr;
     }    
