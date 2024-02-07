@@ -75,9 +75,9 @@ section.about {
 div.photos {
     background-color: #ffffff;
     display: grid;
-    text-align: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2px;
+    text-align: center;
 }
 
 div.photos img {
