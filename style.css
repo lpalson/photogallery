@@ -186,7 +186,7 @@ h2 {font-size: 2em;}
 
 /* Tablet View */
 
-@media (max-width: 880px) {
+@media screen and (max-width: 880px) {
 
     body {
         max-width: 880px;
@@ -208,7 +208,7 @@ h2 {font-size: 2em;}
 
 /* Phone View */
 
-@media (max-width: 485px) {
+@media screen and (max-width: 485px) {
 
     body {
         max-width: 485px;
@@ -231,5 +231,3 @@ h2 {font-size: 2em;}
     }    
 
 }
-
-/* test */
